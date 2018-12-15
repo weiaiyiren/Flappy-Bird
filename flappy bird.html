@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>飞鸟小游戏</title>
+		<style type="text/css">
+			body {
+				background: black;
+			}
+			.container{
+				width: 400px;
+				height: 600px;
+				position: relative;
+				margin: 30px auto;
+				border: 2px solid greenyellow;
+				border-radius: 20px;
+			}
+			#canvas {
+				display: block;
+				border-radius: 18px;
+			}
+			
+			#res {
+				background: rgba(66, 66, 66, 0.5);
+				width: 200px;
+				height: 200px;
+				border-radius: 50%;
+				text-align: center;
+				display: none;
+				position: absolute;
+				left: 100px;
+				top: 160px;
+			}
+			
+			#res h2 {
+				text-align: center;
+				padding: 14px 0;
+				font-size: 18px;
+				line-height: 18px;
+				color: white;
+			}
+			
+			#res .money {
+				width: 50px;
+				height: 50px;
+				display: block;
+				margin: 0 auto;
+				border-radius: 50%;
+			}
+			#time{
+				width: 60px;
+				height: 90px;
+				position: absolute;
+				left:170px;
+				top:120px;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<canvas id="canvas" width="400" height="600">
+			</canvas>
+			<div class="res" id="res">
+				<h2></h2>
+				<img class="money" src="images/gold_03.jpg" />
+			</div>
+			<div id='time'><img src=""/></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="FlappyBird.js">
+	</script>
+
+</html>
